@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulir Pendaftaran</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Formulir Pendaftaran Anggota</h1>
+
+    <form>
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="tgl">Tanggal Lahir:</label><br>
+            <input type="date" id="tgl" name="tgl"><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" name="gender" value="Pria" id="pria"> <label for="pria">Pria</label>
+            <input type="radio" name="gender" value="Wanita" id="wanita"> <label for="wanita">Wanita</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informasi Tambahan</legend>
+
+            <label for="hobi">Pilih Hobi:</label><br>
+            <select id="hobi" name="hobi">
+                <option value="membaca">Membaca</option>
+                <option value="menulis">Menulis</option>
+                <option value="ngoding">Ngoding</option>
+            </select><br><br>
+
+            <label for="bio">Deskripsi Diri:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+
+</html>
